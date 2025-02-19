@@ -1,61 +1,70 @@
-# IP-GeoTracker
 # IP Tracker Tool 🌍
 
-A simple IP tracking tool that fetches **geolocation and ISP details** using the **IP2Location.io API**.  
-It provides **colorful output**, **ISP details**, **proxy/VPN/TOR detection**, and **Google Maps location links**.  
+**IP-Tracker-Tool** is a powerful command-line tool that retrieves **geolocation, ISP details, and security information** about any IP address using the [IP2Location.io](https://www.ip2location.io/) API. It is useful for **OSINT investigations, cybersecurity analysis, and network diagnostics.**
 
-## 🔥 Features
-✅ Fetches **Country, City, ISP, and ASN**  
-✅ Detects **Wi-Fi vs Mobile Data connections**  
-✅ Checks for **VPN, Proxy, and TOR usage**  
-✅ Generates **Google Maps link for IP location**  
-✅ Simple **text-based** output with colors  
+## 🚀 Features
+- ✅ **Geolocation Data** – Country, City, Region, Latitude, Longitude
+- ✅ **ISP Details** – ISP Name, ASN, Domain
+- ✅ **Network Type** – Wi-Fi or Mobile Data Detection
+- ✅ **Security Check** – Detects VPN, Proxy, and TOR usage
+- ✅ **Google Maps Link** – Clickable link for easy location viewing
+- ✅ **Colorful CLI Output** – Enhanced readability with colored text
 
 ---
 
-## 📥 Installation
-1️⃣ **Clone the repository**  
+## 🛠️ Installation
+### **1. Clone the Repository**
 ```bash
 git clone https://github.com/yourusername/IP-Tracker-Tool.git
 cd IP-Tracker-Tool
+```
 
-2️⃣ Install dependencies
-
-bash
-Copy
-Edit
+### **2. Install Dependencies**
+```bash
 pip install -r requirements.txt
-3️⃣ Get an API Key from IP2Location.io
+```
 
-4️⃣ Edit ip_tracker.py and replace:
-
-python
-Copy
-Edit
-API_KEY = "your_api_key_here"
-5️⃣ Run the tool
-
-bash
-Copy
-Edit
+### **3. Run the Tool**
+```bash
 python ip_tracker.py
-🔍 Example Output
-yaml
-Copy
-Edit
---- IP Information ---
-IP Address:            8.8.8.8
-Country:               United States
-Region:                California
-City:                  Mountain View
-Latitude:              37.405
-Longitude:             -122.078
-ISP:                   Google LLC
-ISP Domain:            google.com
-ASN (Autonomous System Number): AS15169
-Connection Type:       Wi-Fi/Ethernet
-Proxy:                 No
-VPN:                   No
-TOR:                   No
+```
 
-Google Maps Location: https://www.google.com/maps?q=37.405,-122.078
+---
+
+## 📌 Usage
+1. Enter an IP address when prompted.
+2. The tool fetches and displays geolocation, ISP, and security details.
+3. If coordinates are available, a **Google Maps link** is generated for easy viewing.
+
+### **Example Output:**
+```
+🔍 IP Address: 192.168.1.1
+🌍 Location: New York, United States
+📡 ISP: Example ISP (ASN: 12345)
+🔎 Network Type: Wi-Fi
+🛡️ Security: No VPN/Proxy detected
+📍 Google Maps: https://www.google.com/maps?q=40.7128,-74.0060
+```
+
+---
+
+## 📌 API Key Setup
+1. **Get an API key** from [IP2Location.io](https://www.ip2location.io/).
+2. **Edit the script** and replace `YOUR_API_KEY` with your actual API key.
+
+---
+
+## 📜 License
+This project is **open-source** under the MIT License.
+
+---
+
+## 🤝 Contributions
+Feel free to submit **issues, pull requests, or suggestions** to improve this tool!
+
+### **Author:** Neeraj Kumar 
+
+---
+
+🚀 **Happy Tracking!**
+
